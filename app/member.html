@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>會員資料</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+
+    <nav class="fixed-top bg-white">
+        <div class="container d-flex justify-content-between">
+            <a href="index.html" class="logo">petpet</a>
+            <div class="d-none d-md-block">
+            <ul class="list-unstyled d-flex m-0 fw-bold pt-2">
+                <li class="ps-4"><a href="detail.html">預約服務</a></li>
+                <li class="ps-4"><a href="###">成為寵物保姆</a></li>
+                <li class="ps-4"><a href="###">Hi, Joanne</a></li>
+            </ul>
+            </div>
+            <ul class="list-unstyled collapse drop" id="collapseExample">
+            <li><a href="detail.html">預約服務</a></li>
+            <li><a href="###">成為寵物保姆</a></li>
+            <li><a href="###">Hi, Joanne</a></li>
+            </ul>
+            <a class="dropdown-icon d-block d-md-none" data-bs-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            <span></span>
+            <span></span>
+            <span></span>
+            </a>
+        </div>
+    </nav>  
+
+    <div class="container mt-5">
+
+        <div class="row">
+            <div class="col-md-6">
+                
+                <span class="h1 text-primary fw-bolder mb-4">會員資料</span>
+                <span class="material-icons text-primary ms-3">
+                    create
+                </span>
+                
+                <div class="d-flex align-items-center mb-4 mt-4">
+                    <img src="assets/images/person-5.png" alt="" class="me-2">
+                    <h3 class="text-primary fw-bolder m-0">Joanne</h3>
+                </div>
+            
+                <ul class="list-unstyled mb-4">
+                    <li class="row">
+                        <p class="col-3 fw-bolder">電子信箱</p>
+                        <p class="col-8 text-primary fw-bolder p-0">cycample@gmail.com</p>
+                    </li>
+                    <li class="row">
+                        <p class="col-3 fw-bolder">聯絡電話</p>
+                        <p class="col-8 text-primary fw-bolder p-0">0912-345-789</p>
+                    </li>
+                    <li class="row">
+                        <p class="col-3 fw-bolder">性別</p>
+                        <p class="col-8 text-primary fw-bolder p-0">女</p>
+                    </li>
+                    <li class="row">
+                        <p class="col-3 fw-bolder">聯絡地址</p>
+                        <p class="col-8 text-primary fw-bolder p-0">高雄市鹽埕區七賢三路123號</p>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="col-md-6 align-self-center">
+                <h2 class="text-primary fw-bolder mb-4" style="line-height: 1.5;">Hi, Joanne<br>喜歡我們提供的服務嗎？<br>現在你也可以成為寵物保姆囉</h2>
+                <button type="button" class="btn btn-lg btn-secondary fw-bolder w-100 mb-5">成為寵物保姆</button>
+            </div>
+        </div>
+        
+    
+        
+    </div>
+    
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+    AOS.init({
+    // Global settings:
+    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+    startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+    initClassName: 'aos-init', // class applied after initialization
+    animatedClassName: 'aos-animate', // class applied on animation
+    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+    offset: 120, // offset (in px) from the original trigger point
+    delay: 0, // values from 0 to 3000, with step 50ms
+    duration: 400, // values from 0 to 3000, with step 50ms
+    easing: 'ease', // default easing for AOS animations
+    once: false, // whether animation should happen only once - while scrolling down
+    mirror: false, // whether elements should animate out while scrolling past them
+    anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+    });
+    </script>
+</body>
+
+</html>
