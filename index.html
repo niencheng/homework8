@@ -8,6 +8,7 @@
   <title>首頁</title>
   <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -86,7 +87,7 @@
 </div>
 
 <!-- card -->
-<div class="container mb-4">
+<div class="container mb-4 d-lg-none">
     <div data-aos="fade-up" class="home-title">
         <h2 class="text-primary fw-bolder">本月熱門保姆</h2>
         <h4 class="text-primary fw-bolder">即時瞭解您的需求，安排最適合毛孩的寵物保姆！</h4>    
@@ -103,7 +104,7 @@
                     <img src="assets/images/person-1.png" alt="" class="card-img-circle">
                     <h4 class="text-primary fw-bolder">Jamie</h4>
                     <p class="text-primary fw-bolder">寄宿、美容、寵物行為訓練</p>
-                    <a href="###" class="btn btn-secondary px-5 py-2 mb-4 px-md-4">預約</a>
+                    <a href="detail.html" class="btn btn-secondary px-5 py-2 mb-4 px-md-4">預約</a>
                     <div class="row">
                         <div class="col">
                             <p class="text-primary fw-bolder">獲得評價</p>
@@ -128,7 +129,7 @@
                     <img src="assets/images/person-2.png" alt="" class="card-img-circle">
                     <h4 class="text-primary fw-bolder">Eric</h4>
                     <p class="text-primary fw-bolder">寄宿、美容</p>
-                    <a href="###" class="btn btn-secondary px-5 py-2 mb-4 px-md-4">預約</a>
+                    <a href="detail.html" class="btn btn-secondary px-5 py-2 mb-4 px-md-4">預約</a>
                     <div class="row">
                         <div class="col">
                             <p class="text-primary fw-bolder">獲得評價</p>
@@ -153,7 +154,7 @@
                     <img src="assets/images/person-3.png" alt="" class="card-img-circle">
                     <h4 class="text-primary fw-bolder">Yvonne</h4>
                     <p class="text-primary fw-bolder">寄宿、美容、寵物行為訓練</p>
-                    <a href="###" class="btn btn-secondary px-5 py-2 mb-4 px-md-4">預約</a>
+                    <a href="detail.html" class="btn btn-secondary px-5 py-2 mb-4 px-md-4">預約</a>
                     <div class="row">
                         <div class="col">
                             <p class="text-primary fw-bolder">獲得評價</p>
@@ -175,6 +176,93 @@
     
     
     <!-- card body end-->
+</div>
+
+<!-- card swiper -->
+<div class="d-none d-lg-block container mb-4">
+    <div class="swiper-container mySwiper">
+        <div class="swiper-wrapper">
+          
+            <div class="swiper-slide">
+                <div class="card shadow w-100">
+                    <div class="pdt120px" style="background: url(assets/images/index-2.jpeg) center 60% / cover;">
+                    </div>
+                    <div class="card-body text-center position-relative pt-11 pb-7 mb-2">
+                        <img src="assets/images/person-1.png" alt="" class="card-img-circle">
+                        <h4 class="text-primary fw-bolder">Jamie</h4>
+                        <p class="text-primary fw-bolder">寄宿、美容、寵物行為訓練</p>
+                        <a href="detail.html" class="btn btn-secondary px-5 py-2 mb-4 px-md-4">預約</a>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-primary fw-bolder">獲得評價</p>
+                                <span class="text-primary fw-bolder h1">198</span>
+                                <span class="text-primary fw-bolder">則</span>
+                            </div>
+                            <div class="col">
+                                <p class="text-primary fw-bolder">已完成訂單</p>
+                                <span class="text-primary fw-bolder h1">580</span>
+                                <span class="text-primary fw-bolder">件</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-slide">
+                <div class="card shadow w-100">
+                    <div class="pdt120px" style="background: url(assets/images/index-3.jpeg) center 30% / cover;">
+                    </div>
+                    <div class="card-body text-center position-relative pt-11 pb-7 mb-2">
+                        <img src="assets/images/person-2.png" alt="" class="card-img-circle">
+                        <h4 class="text-primary fw-bolder">Eric</h4>
+                        <p class="text-primary fw-bolder">寄宿、美容</p>
+                        <a href="detail.html" class="btn btn-secondary px-5 py-2 mb-4 px-md-4">預約</a>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-primary fw-bolder">獲得評價</p>
+                                <span class="text-primary fw-bolder h1">76</span>
+                                <span class="text-primary fw-bolder">則</span>
+                            </div>
+                            <div class="col">
+                                <p class="text-primary fw-bolder">已完成訂單</p>
+                                <span class="text-primary fw-bolder h1">208</span>
+                                <span class="text-primary fw-bolder">件</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="swiper-slide">
+                <div class="card shadow w-100">
+                    <div class="pdt120px" style="background: url(assets/images/index-4.jpeg) center 60% / cover;">
+                    </div>
+                    <div class="card-body text-center position-relative pt-11 pb-7 mb-2">
+                        <img src="assets/images/person-3.png" alt="" class="card-img-circle">
+                        <h4 class="text-primary fw-bolder">Yvonne</h4>
+                        <p class="text-primary fw-bolder">寄宿、美容、寵物行為訓練</p>
+                        <a href="detail.html" class="btn btn-secondary px-5 py-2 mb-4 px-md-4">預約</a>
+                        <div class="row">
+                            <div class="col">
+                                <p class="text-primary fw-bolder">獲得評價</p>
+                                <span class="text-primary fw-bolder h1">52</span>
+                                <span class="text-primary fw-bolder">則</span>
+                            </div>
+                            <div class="col">
+                                <p class="text-primary fw-bolder">已完成訂單</p>
+                                <span class="text-primary fw-bolder h1">196</span>
+                                <span class="text-primary fw-bolder">件</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="swiper-button-next" style="color: #772400; background: #fff;">
+            <span class="material-icons" style="font-size: 50px;">play_circle_filled</span>
+        </div>
+    </div>
 </div>
 
 <!-- reserve -->
@@ -282,6 +370,8 @@
         </li>
     </ul>
 </div>
+
+
 
   <footer class="footer mb-md-4">
  
@@ -423,6 +513,28 @@
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   </script>
 </body>
 

@@ -9259,6 +9259,24 @@ textarea.form-control-lg {
 .service-bg-high-mix {
   height: 132px; }
 
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
+  content: none !important; }
+
 @media (min-width: 768px) {
   .banner-img {
     width: 200px;
@@ -9311,21 +9329,6 @@ a:hover .hover {
 
 .home-input-group-button {
   width: 100% !important; }
-
-img {
-  max-width: 100%;
-  height: auto; }
-
-a {
-  text-decoration: none; }
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 800px; } }
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 1075px; } }
 
 .home-stay-img {
   padding-top: 200px; }
@@ -9408,12 +9411,11 @@ a {
   height: 82px;
   color: #888888; }
 
-a:hover .reservation-card {
-  border: solid 2px #D5411A !important; }
-  a:hover .reservation-card span {
-    color: #F0AD25 !important; }
-  a:hover .reservation-card p {
-    color: #772400 !important; }
+.modal-img {
+  height: 100px; }
+
+.select-width {
+  width: 25%; }
 
 .daynum {
   width: 80%;
@@ -9421,8 +9423,68 @@ a:hover .reservation-card {
   margin-bottom: 1rem;
   margin-right: 3px; }
 
-.select-width {
-  width: 25%; }
+a:hover .reservation-card {
+  border: solid 2px #D5411A !important; }
+  a:hover .reservation-card span {
+    color: #F0AD25 !important; }
+  a:hover .reservation-card p {
+    color: #772400 !important; }
+
+a:focus .reservation-card {
+  border: solid 2px #D5411A !important; }
+  a:focus .reservation-card span {
+    color: #F0AD25 !important; }
+  a:focus .reservation-card p {
+    color: #772400 !important; }
+
+.next-btn {
+  width: 100%; }
+
+.back-btn {
+  width: 100%; }
+
+@media (min-width: 768px) {
+  .modal-rwd {
+    width: 690px !important;
+    position: relative;
+    right: 100px; }
+  .modal-img {
+    height: 135px; }
+  .modal-icon {
+    height: 128px;
+    margin-bottom: 38px; }
+  .reservation-card {
+    width: 126px;
+    height: 128px;
+    margin: 0;
+    margin-top: 20px;
+    padding-top: 16px; }
+    .reservation-card span {
+      font-size: 44px; }
+  .daynum {
+    width: 43%;
+    margin: 0; }
+  .next-btn {
+    margin-top: 32px;
+    width: 50%; }
+  .back-btn {
+    margin-top: 32px;
+    margin-right: 5px;
+    width: 20%; } }
+
+@media (min-width: 992px) {
+  .modal-rwd {
+    width: 920px !important;
+    right: 220px; }
+  .modal-img {
+    width: 282px;
+    height: 282px; }
+  .next-btn {
+    width: 100%;
+    margin-top: 0px; }
+  .back-btn {
+    width: 100%;
+    margin-top: 0px; } }
 
 .login-button {
   background: 0;
@@ -9436,5 +9498,20 @@ a:hover .reservation-card {
     max-width: 58.5%; }
   .w-lg-50 {
     width: 49% !important; } }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+a {
+  text-decoration: none; }
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 800px; } }
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1075px; } }
 
 /*# sourceMappingURL=all.css.map */

@@ -8,6 +8,7 @@
   <title>預約服務</title>
   <link rel="stylesheet" href="./assets/style/all.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 
 <body>
@@ -844,159 +845,199 @@
 <!-- reservation modal-->
 <div class="modal fade" id="reservation" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content modal-rwd">
         
         <!-- <div class="modal-header">
         </div> -->
         
         <div class="modal-body">
             <div class="container">
-                <!-- timeline -->
-                <div class="row timeline-section py-3">
-                    <div class="col-4">
-                      <div class="timeline-pointer">
-                        <p class="pt-2 fw-bolder">預約項目</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="timeline-pointer">
-                        <p class="pt-2">預約資料</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="timeline-pointer">
-                        <p class="pt-2">付款資訊</p>
-                      </div>
-                    </div>
-                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-12">
+                        <!-- timeline -->
+                        <div class="row timeline-section py-3 d-md-none">
+                            <div class="col-4">
+                            <div class="timeline-pointer">
+                                <p class="pt-2 fw-bolder">預約項目</p>
+                            </div>
+                            </div>
+                            <div class="col-4">
+                            <div class="timeline-pointer">
+                                <p class="pt-2">預約資料</p>
+                            </div>
+                            </div>
+                            <div class="col-4">
+                            <div class="timeline-pointer">
+                                <p class="pt-2">付款資訊</p>
+                            </div>
+                            </div>
+                        </div>
 
-                <h2 class="text-primary fw-bolder">預約項目</h2>
-                <div class="d-flex">
-                    
-                    <div class="col-3 me-3" style="height: 100px; background: url(assets/images/homestay-3.jpeg) center 60% / cover;"></div>
-                    <div class="col-6">
-                        <h4 class="text-primary fw-bolder m-0">毛孩好家</h4>
-                        <ul class="list-unstyled d-flex text-success m-0 align-self-center">
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                        </ul>
-                        <div class="d-flex text-start">
-                            <span class="material-icons text-secondary me-1">place</span>
-                            <p class="text-primary fw-bolder">高雄市苓雅區、新興區、前鎮區</p>
+                        <h2 class="text-primary fw-bolder mt-md-4 mb-md-3">預約項目</h2>
+                        
+                        <div class="row flex-lg-row-reverse mb-lg-4">
+                            <div class="d-flex justify-content-md-between col-lg-4 d-lg-block">
+                            
+                                <div class="col-3 me-3 modal-img" style="background: url(assets/images/homestay-3.jpeg) center 60% / cover;"></div>
+                                <div class="col-6 mt-md-3 pt-md-2 col-md-8 col-lg-12">
+                                    <div class="d-md-flex mb-lg-3">
+                                        <h4 class="text-primary fw-bolder m-0 me-md-2">毛孩好家</h4>
+                                        <ul class="list-unstyled d-flex text-success m-0 align-self-center">
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="d-flex text-start">
+                                        <span class="material-icons text-secondary me-1">place</span>
+                                        <p class="text-primary fw-bolder">高雄市苓雅區、新興區、前鎮區</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="col-lg-8">
+                                <ul class="list-unstyled d-flex text-center modal-icon justify-content-md-between">
+                                    <li>
+                                        <a href="###">
+                                            <div class="card shadow reservation-card">
+                                                <span class="material-icons pt-3">
+                                                    house
+                                                </span>
+                                                <p>寄宿</p>
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="###">
+                                            <div class="card shadow reservation-card">
+                                                <span class="material-icons pt-3">
+                                                    wash
+                                                </span>
+                                                <p>美容</p>
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="###">
+                                            <div class="card shadow reservation-card">
+                                                <span class="material-icons pt-3">
+                                                    roofing
+                                                </span>
+                                                <p>到府保姆</p>
+                                            </div> 
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="###">
+                                            <div class="card shadow reservation-card">
+                                                <span class="material-icons pt-3">    
+                                                    directions_walk
+                                                </span>
+                                                <p>遛狗保姆</p>
+                                            </div> 
+                                        </a>
+                                    </li>
+                                </ul>
+        
+                                <p>選擇日期</p>
+                                <form action="" class="d-md-flex mb-md-3">
+                                    <input type="date" class="daynum">
+                                    <span class="px-md-1 pt-md-1">至</span>
+                                    <input type="date" class="daynum">
+                                    <span class="px-md-1 pt-md-1">共1晚</span>
+                                </form>
+        
+                                <ul class="list-unstyled d-flex justify-content-between">
+                                    <li class="select-width">
+                                        <p class="m-1">毛孩數量</p>
+                                        <select name="number" id="number" class="w-100" style="height: 38px;">
+                                            <option value="1" selected>1隻</option>
+                                            <option value="2">2隻</option>
+                                            <option value="3">3隻</option>
+                                            <option value="4">4隻</option>
+                                            <option value="5">5隻</option>
+                                        </select>
+                                    </li>
+                                    <li class="select-width">
+                                        <p class="m-1">您的毛孩是</p>
+                                        <select name="variety" id="variety" class="w-100" style="height: 38px;">
+                                            <option value="1" selected>貓</option>
+                                            <option value="2">狗</option>
+                                            <option value="3">兔子</option>
+                                            <option value="4">老鼠</option>
+                                            <option value="5">烏龜</option>
+                                        </select>
+                                    </li>
+                                    <li class="select-width">
+                                        <p class="m-1">年齡</p>
+                                        <select name="age" id="age" class="w-100" style="height: 38px;">
+                                            <option value="1" selected>1歲</option>
+                                            <option value="2">2歲</option>
+                                            <option value="3">3歲</option>
+                                            <option value="4">4歲</option>
+                                            <option value="5">5歲</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <!-- timeline -->
+                                <div class="row timeline-section d-none d-md-flex" style="position: relative; top: 16px;">
+                                    <div class="col-4">
+                                    <div class="timeline-pointer">
+                                        <p class="pt-2 fw-bolder">預約項目</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-4">
+                                    <div class="timeline-pointer">
+                                        <p class="pt-2">預約資料</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-4">
+                                    <div class="timeline-pointer">
+                                        <p class="pt-2">付款資訊</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <button type="button" class="btn btn-lg btn-outline-secondary fw-bolder w-100 mb-3 border-0 d-md-none" data-bs-dismiss="modal">返回</button>
+                                <div class="d-md-flex flex-row-reverse">
+                                    <button type="button" class="btn btn-lg btn-secondary fw-bolder next-btn" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#reservation-page2">下一步</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
                 
-                <ul class="list-unstyled d-flex text-center">
-                    <li>
-                        <a href="###">
-                            <div class="card shadow reservation-card">
-                                <span class="material-icons pt-3">
-                                    house
-                                </span>
-                                <p>寄宿</p>
-                            </div> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="###">
-                            <div class="card shadow reservation-card">
-                                <span class="material-icons pt-3">
-                                    wash
-                                </span>
-                                <p>美容</p>
-                            </div> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="###">
-                            <div class="card shadow reservation-card">
-                                <span class="material-icons pt-3">
-                                    roofing
-                                </span>
-                                <p>到府保姆</p>
-                            </div> 
-                        </a>
-                    </li>
-                    <li>
-                        <a href="###">
-                            <div class="card shadow reservation-card">
-                                <span class="material-icons pt-3">    
-                                    directions_walk
-                                </span>
-                                <p>遛狗保姆</p>
-                            </div> 
-                        </a>
-                    </li>
-                </ul>
-
-                <p>選擇日期</p>
-                <form action="">
-                    <input type="date" class="daynum">
-                    <span>至</span>
-                    <input type="date" class="daynum">
-                    <span>共1晚</span>
-                </form>
-
-                <ul class="list-unstyled d-flex justify-content-between">
-                    <li class="select-width">
-                        <p class="m-1">毛孩數量</p>
-                        <select name="number" id="number" class="w-100" style="height: 38px;">
-                            <option value="1" selected>1隻</option>
-                            <option value="2">2隻</option>
-                            <option value="3">3隻</option>
-                            <option value="4">4隻</option>
-                            <option value="5">5隻</option>
-                        </select>
-                    </li>
-                    <li class="select-width">
-                        <p class="m-1">您的毛孩是</p>
-                        <select name="variety" id="variety" class="w-100" style="height: 38px;">
-                            <option value="1" selected>貓</option>
-                            <option value="2">狗</option>
-                            <option value="3">兔子</option>
-                            <option value="4">老鼠</option>
-                            <option value="5">烏龜</option>
-                        </select>
-                    </li>
-                    <li class="select-width">
-                        <p class="m-1">年齡</p>
-                        <select name="age" id="age" class="w-100" style="height: 38px;">
-                            <option value="1" selected>1歲</option>
-                            <option value="2">2歲</option>
-                            <option value="3">3歲</option>
-                            <option value="4">4歲</option>
-                            <option value="5">5歲</option>
-                        </select>
-                    </li>
-                </ul>
-
-                <button type="button" class="btn btn-lg btn-outline-secondary fw-bolder w-100 mb-3 border-0" data-bs-dismiss="modal">返回</button>
-                <button type="button" class="btn btn-lg btn-secondary fw-bolder w-100" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#reservation-page2">下一步</button>
+                
             </div>
         </div>
         
@@ -1010,86 +1051,126 @@
 <!-- reservation modal page2-->
 <div class="modal fade" id="reservation-page2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content modal-rwd">
         
         <!-- <div class="modal-header">
         </div> -->
         
         <div class="modal-body">
             <div class="container">
-                <!-- timeline -->
-                <div class="row timeline-section py-3">
-                    <div class="col-4">
-                      <div class="timeline-pointer">
-                        <p class="pt-2">預約項目</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="timeline-pointer">
-                        <p class="pt-2 fw-bolder">預約資料</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="timeline-pointer">
-                        <p class="pt-2">付款資訊</p>
-                      </div>
-                    </div>
-                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-12">
+                        <!-- timeline -->
+                        <div class="row timeline-section py-3 d-md-none">
+                            <div class="col-4">
+                            <div class="timeline-pointer">
+                                <p class="pt-2">預約項目</p>
+                            </div>
+                            </div>
+                            <div class="col-4">
+                            <div class="timeline-pointer">
+                                <p class="pt-2 fw-bolder">預約資料</p>
+                            </div>
+                            </div>
+                            <div class="col-4">
+                            <div class="timeline-pointer">
+                                <p class="pt-2">付款資訊</p>
+                            </div>
+                            </div>
+                        </div>
 
-                <h2 class="text-primary fw-bolder">預約項目</h2>
-                <div class="d-flex mb-3">
-                    
-                    <div class="col-3 me-3" style="height: 100px; background: url(assets/images/homestay-3.jpeg) center 60% / cover;"></div>
-                    <div class="col-6">
-                        <h4 class="text-primary fw-bolder m-0">毛孩好家</h4>
-                        <ul class="list-unstyled d-flex text-success m-0 align-self-center">
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                        </ul>
-                        <div class="d-flex text-start">
-                            <span class="material-icons text-secondary me-1">place</span>
-                            <p class="text-primary fw-bolder">高雄市苓雅區、新興區、前鎮區</p>
+                        <h2 class="text-primary fw-bolder mt-md-4 mb-md-3">預約項目</h2>
+                        
+                        <div class="row flex-lg-row-reverse">
+                            <div class="d-flex justify-content-md-between col-lg-4 d-lg-block">
+                            
+                                <div class="col-3 me-3 modal-img" style="background: url(assets/images/homestay-3.jpeg) center 60% / cover;"></div>
+                                <div class="col-6 mt-md-3 pt-md-2 col-md-8 col-lg-12">
+                                    <div class="d-md-flex mb-lg-3">
+                                        <h4 class="text-primary fw-bolder m-0 me-md-2">毛孩好家</h4>
+                                        <ul class="list-unstyled d-flex text-success m-0 align-self-center">
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="d-flex text-start">
+                                        <span class="material-icons text-secondary me-1">place</span>
+                                        <p class="text-primary fw-bolder">高雄市苓雅區、新興區、前鎮區</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="col-lg-8">
+                                <form action="" class="col-md-7">
+                                    <label for="pet-name" class="form-label fw-bolder">毛孩姓名</label>
+                                    <input type="text" class="form-control mb-3" id="pet-name" placeholder="請輸入毛孩姓名">
+                                    <label for="owner-name" class="form-label fw-bolder">飼主姓名</label>
+                                    <input type="text" class="form-control mb-3" id="owner-name" placeholder="請輸入飼主姓名">
+                                    <label for="mail" class="form-label fw-bolder">Email</label>
+                                    <input type="text" class="form-control mb-3" id="mail" placeholder="example@gmail.com">
+                                    <label for="phone" class="form-label fw-bolder">聯絡電話</label>
+                                    <input type="text" class="form-control mb-3" id="phone" placeholder="0912-345-678">
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <!-- timeline -->
+                                <div class="row timeline-section d-none d-md-flex" style="position: relative; top: 16px;">
+                                    <div class="col-4">
+                                    <div class="timeline-pointer">
+                                        <p class="pt-2">預約項目</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-4">
+                                    <div class="timeline-pointer">
+                                        <p class="pt-2 fw-bolder">預約資料</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-4">
+                                    <div class="timeline-pointer">
+                                        <p class="pt-2">付款資訊</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="d-md-flex justify-content-md-end d-lg-block">
+                                    <button type="button" class="btn btn-lg btn-outline-secondary fw-bolder back-btn mb-3 border-0 mb-md-0 mb-lg-3" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reservation">返回</button>
+                                    <button type="button" class="btn btn-lg btn-secondary fw-bolder next-btn mb-lg-3" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#reservation-page3">下一步</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
                 
-                <form action="">
-                    <label for="pet-name" class="form-label fw-bolder">毛孩姓名</label>
-                    <input type="text" class="form-control mb-3" id="pet-name" placeholder="請輸入毛孩姓名">
-                    <label for="owner-name" class="form-label fw-bolder">飼主姓名</label>
-                    <input type="text" class="form-control mb-3" id="owner-name" placeholder="請輸入飼主姓名">
-                    <label for="mail" class="form-label fw-bolder">Email</label>
-                    <input type="text" class="form-control mb-3" id="mail" placeholder="example@gmail.com">
-                    <label for="phone" class="form-label fw-bolder">聯絡電話</label>
-                    <input type="text" class="form-control mb-3" id="phone" placeholder="0912-345-678">
-                </form>
-
-                <button type="button" class="btn btn-lg btn-outline-secondary fw-bolder w-100 mb-3 border-0" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reservation">返回</button>
-                <button type="button" class="btn btn-lg btn-secondary fw-bolder w-100" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#reservation-page3">下一步</button>
+                
             </div>
         </div>
         
@@ -1103,84 +1184,124 @@
 <!-- reservation modal page3-->
 <div class="modal fade" id="reservation-page3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content modal-rwd">
         
         <!-- <div class="modal-header">
         </div> -->
         
         <div class="modal-body">
             <div class="container">
-                <!-- timeline -->
-                <div class="row timeline-section py-3">
-                    <div class="col-4">
-                      <div class="timeline-pointer">
-                        <p class="pt-2">預約項目</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="timeline-pointer">
-                        <p class="pt-2">預約資料</p>
-                      </div>
-                    </div>
-                    <div class="col-4">
-                      <div class="timeline-pointer">
-                        <p class="pt-2 fw-bolder">付款資訊</p>
-                      </div>
-                    </div>
-                </div>
+                <div class="row justify-content-center">
+                    <div class="col-md-10 col-lg-12">
+                        <!-- timeline -->
+                        <div class="row timeline-section py-3 d-md-none">
+                            <div class="col-4">
+                            <div class="timeline-pointer">
+                                <p class="pt-2">預約項目</p>
+                            </div>
+                            </div>
+                            <div class="col-4">
+                            <div class="timeline-pointer">
+                                <p class="pt-2">預約資料</p>
+                            </div>
+                            </div>
+                            <div class="col-4">
+                            <div class="timeline-pointer">
+                                <p class="pt-2 fw-bolder">付款資訊</p>
+                            </div>
+                            </div>
+                        </div>
 
-                <h2 class="text-primary fw-bolder">預約項目</h2>
-                <div class="d-flex mb-3">
-                    
-                    <div class="col-3 me-3" style="height: 100px; background: url(assets/images/homestay-3.jpeg) center 60% / cover;"></div>
-                    <div class="col-6">
-                        <h4 class="text-primary fw-bolder m-0">毛孩好家</h4>
-                        <ul class="list-unstyled d-flex text-success m-0 align-self-center">
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                            <li>
-                                <span class="material-icons">
-                                    star
-                                </span>
-                            </li>
-                        </ul>
-                        <div class="d-flex text-start">
-                            <span class="material-icons text-secondary me-1">place</span>
-                            <p class="text-primary fw-bolder">高雄市苓雅區、新興區、前鎮區</p>
+                        <h2 class="text-primary fw-bolder mt-md-4 mb-md-3">預約項目</h2>
+                        
+                        <div class="row flex-lg-row-reverse">
+                            <div class="d-flex justify-content-md-between col-lg-4 d-lg-block d-md-none">
+                            
+                                <div class="col-3 me-3 modal-img" style="background: url(assets/images/homestay-3.jpeg) center 60% / cover;"></div>
+                                <div class="col-6 mt-md-3 pt-md-2 col-md-8 col-lg-12">
+                                    <div class="d-md-flex mb-lg-3">
+                                        <h4 class="text-primary fw-bolder m-0 me-md-2">毛孩好家</h4>
+                                        <ul class="list-unstyled d-flex text-success m-0 align-self-center">
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                            <li>
+                                                <span class="material-icons">
+                                                    star
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                    <div class="d-flex text-start">
+                                        <span class="material-icons text-secondary me-1">place</span>
+                                        <p class="text-primary fw-bolder">高雄市苓雅區、新興區、前鎮區</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="col-lg-8">
+                                <form action="" class="col-md-7">
+                                    <label for="card-num" class="form-label fw-bolder">信用卡帳號</label>
+                                    <input type="text" class="form-control mb-3" id="card-num" placeholder="Xxxx-xxxx-xxxx-xxxx">
+                                    <label for="valid-date" class="form-label fw-bolder">有效日期</label>
+                                    <input type="text" class="form-control mb-3" id="valid-date" placeholder="(MM/YY)">
+                                    <label for="safe-num" class="form-label fw-bolder">安全碼</label>
+                                    <input type="text" class="form-control mb-3" id="safe-num" placeholder="***">
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-lg-8">
+                                <!-- timeline -->
+                                <div class="row timeline-section d-none d-md-flex" style="position: relative; top: 16px;">
+                                    <div class="col-4">
+                                    <div class="timeline-pointer">
+                                        <p class="pt-2">預約項目</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-4">
+                                    <div class="timeline-pointer">
+                                        <p class="pt-2">預約資料</p>
+                                    </div>
+                                    </div>
+                                    <div class="col-4">
+                                    <div class="timeline-pointer">
+                                        <p class="pt-2 fw-bolder">付款資訊</p>
+                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="d-md-flex justify-content-md-end d-lg-block">
+                                    <button type="button" class="btn btn-lg btn-outline-secondary fw-bolder back-btn mb-3 border-0 mb-md-0 mb-lg-3" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reservation-page2">返回</button>
+                                    <button type="button" class="btn btn-lg btn-secondary fw-bolder next-btn mb-lg-3" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#reservation-page4">下一步</button>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
                 
-                <form action="">
-                    <label for="card-num" class="form-label fw-bolder">信用卡帳號</label>
-                    <input type="text" class="form-control mb-3" id="card-num" placeholder="Xxxx-xxxx-xxxx-xxxx">
-                    <label for="valid-date" class="form-label fw-bolder">有效日期</label>
-                    <input type="text" class="form-control mb-3" id="valid-date" placeholder="(MM/YY)">
-                    <label for="safe-num" class="form-label fw-bolder">安全碼</label>
-                    <input type="text" class="form-control mb-3" id="safe-num" placeholder="***">
-                </form>
-
-                <button type="button" class="btn btn-lg btn-outline-secondary fw-bolder w-100 mb-3 border-0" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#reservation-page2">返回</button>
-                <button type="button" class="btn btn-lg btn-secondary fw-bolder w-100" data-bs-toggle="modal" data-bs-dismiss="modal" data-bs-target="#reservation-page4">下一步</button>
+                
             </div>
         </div>
         
@@ -1190,26 +1311,31 @@
       </div>
     </div>
 </div>
+
 
 <!-- reservation modal page4-->
 <div class="modal fade" id="reservation-page4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content modal-rwd">
         
         <!-- <div class="modal-header">
         </div> -->
         
         <div class="modal-body">
             <div class="container">
-
-                <div class="d-flex flex-column justify-content-center align-items-center w-100" style="width: 340px; height: 650px;">
-                    <span class="material-icons text-success mb-3" style="font-size: 80px; line-height: 1;">
-                        pets
-                    </span>
-                    <h2 class="text-primary fw-bolder">預約成功!</h2>
-                    <p class="text-primary fw-bolder">您可以在會員頁找到您的預約資料並修改或取消預約。</p>
-                    <a href="member.html" class="btn btn-lg btn-secondary fw-bolder w-100">前往會員頁</a>
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column justify-content-center align-items-center w-100" style="height: 500px;">
+                            <span class="material-icons text-success mb-3" style="font-size: 80px; line-height: 1;">
+                                pets
+                            </span>
+                            <h2 class="text-primary fw-bolder">預約成功!</h2>
+                            <p class="text-primary fw-bolder">您可以在會員頁找到您的預約資料並修改或取消預約。</p>
+                            <a href="member.html" class="btn btn-lg btn-secondary fw-bolder w-100">前往會員頁</a>
+                        </div>
+                    </div>
                 </div>
+                
                 
             </div>
         </div>
@@ -1220,6 +1346,10 @@
       </div>
     </div>
 </div>
+
+
+
+
 
 
 
@@ -1363,6 +1493,28 @@
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+  </script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 1,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
   </script>
 </body>
 
